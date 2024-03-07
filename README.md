@@ -1,8 +1,8 @@
 # MagiSQL Gemma:
 
-## Release 1.00: Development Setop
+## Release 1.00: Development Setup
 
-- Initialize Flask project and setup project structure.
+- Initialize Flask project and setup project structure. @PravinTiwari023
 - Setup Firebase project and integrate with the backend.
 - Create basic frontend layout with HTML, CSS, and JavaScript.
 - Implement authentication if required.
