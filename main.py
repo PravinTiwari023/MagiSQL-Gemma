@@ -17,4 +17,4 @@ if __name__ == '__main__':
 
 
 def print_kaushik():
-    pass
+    print('hello world')
