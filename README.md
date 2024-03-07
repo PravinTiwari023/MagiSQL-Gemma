@@ -3,9 +3,9 @@
 ## Release 1.00: Development Setup
 
 - Initialize Flask project and setup project structure. @PravinTiwari023
-- Setup Firebase project and integrate with the backend.
-- Create basic frontend layout with HTML, CSS, and JavaScript.
-- Implement authentication if required.
+- Setup Firebase project and integrate with the backend. @KaushikSakre
+- Create basic frontend layout with HTML, CSS, and JavaScript. @PravinTiwari023
+- Implement authentication if required. @KaushikSakre
 
 
 ## New Contributors
