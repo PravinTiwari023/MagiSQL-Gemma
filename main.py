@@ -30,9 +30,9 @@ def perform_login():
         # Store the user's id token in the session
         user_id = user['localId']
         session['user_id'] = user_id
-        return 'Login successful. Welcome, ' + email
+        return render_template('home.html')
     except:
-        return 'Invalid email or password'
+        return render_template('login.html', message='Email does not exists')
 
 @app.route('/register', methods=['POST'])
 def perform_register():
@@ -41,9 +41,9 @@ def perform_register():
 
     try:
         user = auth.create_user_with_email_and_password(email, password)
-        return 'User successfully registered with email: ' + email
+        return render_template('login.html', message='Register successful.')
     except:
-        return 'Email already exists or password is too weak'
+        return render_template('register.html', message='Email already exists')
 
 @app.route('/submit', methods=['POST'])
 def save_data():

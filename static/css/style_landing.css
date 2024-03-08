@@ -1,0 +1,148 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: url('/static/media/pexels-photo.jpg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px; /* Padding for smaller screens */
+}
+
+/* Header Styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px; /* Adjust as per your design */
+}
+
+/* Logo and navigation styling */
+.logo {
+  font-size: 2em;
+  position: absolute;
+  top: 1em;
+  left: 1em;
+}
+
+nav ul {
+  list-style: none;
+  position: absolute;
+  top: 2em;
+  right: 2em;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Main Content Styling */
+main .welcome {
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Center horizontally */
+  height: calc(100vh - 40px); /* Adjust height taking into account header and footer */
+  color: #333; /* Dark text color as seen in the image */
+  font-family: 'Open Sans', sans-serif; /* Example font, replace with your choice */
+  padding: 20px;
+  background: transparent; /* Semi-transparent background for readability */
+  margin: auto; /* Centering the welcome message vertically */
+  max-width: 960px; /* Maximum width of the welcome container */
+  border-radius: 10px; /* Rounded corners as seen in the image */
+  box-shadow: transparent; /* Soft shadow for depth */
+}
+
+main .welcome p {
+  margin-bottom: 20px; /* Adjust as per your design */
+  font-size: 1.5rem; /* Larger font size for visibility */
+  font-weight: 300; /* Lighter font-weight for a modern look */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle text shadow for depth */
+}
+
+/* Login Button Styling */
+.login-button {
+  display: block; /* Make the button a block to center it */
+  padding: 10px 20px;
+  border: none;
+  background-color: #ffffff; /* White button background */
+  color: #333; /* Color of the button text */
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center; /* Center text within the button */
+  width: 200px; /* Set a fixed width for the button */
+  margin: 0 auto; /* Center the button horizontally */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow for the button */
+  border: 1px solid rgba(0, 0, 0, 0.1); /* Subtle border */
+}
+
+.login-button:hover {
+  background-color: #f8f8f8; /* Slightly darker on hover for interaction feedback */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Larger shadow on hover for depth */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  nav ul li {
+    margin-right: 15px;
+  }
+
+  main .welcome p {
+    font-size:
+1.2rem; /* Slightly smaller font on tablet */
+}
+
+@media (max-width: 480px) {
+header {
+flex-direction: column;
+align-items: flex-start;
+}
+
+.logo {
+font-size: 1.3rem;
+}
+
+nav {
+align-self: center;
+margin-top: 10px;
+}
+
+nav ul li {
+margin-right: 10px;
+}
+
+main .welcome {
+padding: 0 20px; /* Add padding on smaller screens */
+}
+
+main .welcome p {
+font-size: 1rem; /* Smaller font on mobile */
+}
+
+.login-button {
+padding: 8px 16px; /* Slightly smaller button on mobile */
+}
+}
