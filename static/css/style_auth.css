@@ -1,0 +1,170 @@
+/* General styles */
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: url('/static/media/pexels-photo.jpg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px; /* Padding for smaller screens */
+}
+
+/* Logo and navigation styling */
+.logo {
+  font-size: 2em;
+  position: absolute;
+  top: 1em;
+  left: 1em;
+}
+
+nav ul {
+  list-style: none;
+  position: absolute;
+  top: 2em;
+  right: 2em;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.message {
+    position: absolute; /* Position the message absolutely within the body */
+    top: 100px; /* Distance from the top of the body - adjust as needed */
+    left: 50%; /* Center the message horizontally */
+    transform: translateX(-50%); /* Adjust the horizontal centering due to absolute positioning */
+    width: 90%; /* Adjust based on preference */
+    text-align: center; /* Center the text within the message */
+    background-color: 0 2px 4px rgba(0,0,0,0.1); /* Light background color for visibility */
+    padding: 10px; /* Padding for aesthetics */
+    border-radius: 5px; /* Optional: rounded corners */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional: slight shadow for depth */
+    z-index: 1000; /* Ensures it's above other content */
+}
+
+/* Container styling */
+.container {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 2.2em;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 350px; /* Maximum width of the form */
+  text-align: center;
+}
+
+/* Form element styles */
+input[type=email], input[type=password], button {
+  width: 100%;
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+/* Login Button Styling */
+.login-button {
+  display: block; /* Make the button a block to center it */
+  padding: 10px 20px;
+  border: none;
+  background-color: #ffffff; /* White button background */
+  color: #333; /* Color of the button text */
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center; /* Center text within the button */
+  width: 200px; /* Set a fixed width for the button */
+  margin: 0 auto; /* Center the button horizontally */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow for the button */
+  border: 1px solid rgba(0, 0, 0, 0.1); /* Subtle border */
+}
+
+.login-button:hover {
+  background-color: #f8f8f8; /* Slightly darker on hover for interaction feedback */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Larger shadow on hover for depth */
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+  /* Adjustments for tablets */
+  .logo, nav ul li a {
+    font-size: 1.5em; /* Smaller font size for logo and nav links */
+  }
+
+  .container {
+    width: 90%; /* Full width on smaller screens, with some padding */
+    margin: 0 auto; /* Center the container */
+    box-shadow: none; /* Optional: Remove shadow for a flatter design */
+  }
+
+  input[type=email],
+  input[type=password],
+  button {
+    font-size: 16px; /* Larger font size for better readability */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* Adjustments for mobile phones */
+  .logo {
+    font-size: 1.2em; /* Even smaller font size for logo */
+  }
+
+  nav {
+    display: none; /* Hide navigation menu on small screens */
+  }
+
+  .container {
+    padding: 15px; /* Adjust padding to ensure content fits well */
+  }
+
+  h2 {
+    font-size: 1.5em; /* Larger font size for heading to stand out */
+  }
+
+  p {
+    font-size: 0.9em; /* Smaller paragraph font size */
+  }
+
+  p a {
+    font-size: 1em; /* Ensure links are still tappable */
+  }
+
+  button {
+    font-size: 1em; /* Adjust button font size */
+    padding: 15px 20px; /* Larger padding for a bigger tap target */
+  }
+}
+
+/* High Resolution Screens */
+@media only screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* For retina displays, ensure that your text is still readable and that form elements are easy to interact with */
+  body {
+    font-size: 18px; /* Larger base font size */
+  }
+
+  input[type=email],
+  input[type=password] {
+    padding: 15px; /* Larger padding for form inputs */
+    margin-bottom: 15px; /* Increase margin-bottom for spacing */
+  }
+
+  button {
+    padding: 20px; /* Larger padding for button */
+  }
+}

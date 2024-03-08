@@ -2,20 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Submit Data</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to MagiSQL</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style_landing.css') }}">
 </head>
 <body>
-    <h2>Submit Your Details</h2>
-    <form action="/submit" method="post">
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" required><br>
-        <label for="level">Select your level:</label><br>
-        <select id="level" name="level" required>
-            <option value="beginner">Beginner</option>
-            <option value="intermediate">Intermediate</option>
-            <option value="expert">Expert</option>
-        </select><br>
-        <input type="submit" value="Submit">
-    </form>
+    <header>
+        <div class="logo">MagiSQL-Gemma</div>
+        <nav>
+            <ul>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="welcome">
+            <p>Welcome to MagiSQL. Find the Solution of your problem with help of Google advance AI model Gemma LLM</p>
+            <a href="/login" class="login-button">Login</a>
+        </section>
+    </main>
 </body>
 </html>

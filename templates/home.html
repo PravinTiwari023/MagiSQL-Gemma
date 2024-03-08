@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Interface</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style_home.css') }}">
+</head>
+<body>
+  <main>
+    <aside>
+      <h1>History</h1>
+      <ul>
+        <li>message 1</li>
+        <li>message 2</li>
+        <li>message 3</li>
+        <li>message 4</li>
+      </ul>
+      <button id="logout">Logout</button>
+    </aside>
+    <section class="chat-window">
+      <div class="logo">LOGO</div>
+      <div class="welcome">Welcome</div>
+    </section>
+  </main>
+
+  <footer>
+    <input type="text" placeholder="Enter the text here">
+    <select id="level-select">
+      <option value="beginner">Beginner</option>
+      <option value="intermediate">Intermediate</option>
+      <option value="expert">Expert</option>
+    </select>
+    <button id="submit">Submit</button>
+  </footer>
+
+  <script src="/static/js/script.js"></script>
+</body>
+</html>
