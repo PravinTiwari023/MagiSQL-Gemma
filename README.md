@@ -1,5 +1,12 @@
 # MagiSQL Gemma:
 
+## Release 2.00: Core Development
+
+- Integrate Google GEMMA AI model with Flask backend for processing SQL queries.
+- Develop the frontend interface to interact with the AI model through the backend. @PravinTiwari023
+- Implement functionality to save and retrieve previous queries and responses from Firebase.
+- Ensure secure and efficient communication between frontend, backend, and Firebase.
+
 ## Release 1.00: Development Setup
 
 - Initialize Flask project and setup project structure. @PravinTiwari023
